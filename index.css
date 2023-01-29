@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+html {
+
+    --Blue1: #3A7B99;
+    --Blue2: #70AFCE;
+    --Blue3: #A5DEF1;
+    --White1: #F7FBFA;
+
+
+    --Red: #FA4753;
+    --Black1: #17181C;
+    --Black2: #161127;
+    --Black3: #161926;
+    --White2: #E5E5E5;
+    --Cinza: #26262b;
+
+
+    --Black_Background: #030406;
+}
+
+.inicio {
+    background-image: url(resources/assets/Background.png);
+    background-size: 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--Black_Background);
+    color: aliceblue;
+    min-height: 100vh;
+    -webkit-box-shadow: 0px 9px 21px 0px rgba(51, 47, 51, 1);
+    -moz-box-shadow: 0px 9px 21px 0px rgba(51, 47, 51, 1);
+    box-shadow: 0px 9px 21px 0px rgba(51, 47, 51, 1);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 3.375rem;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.nav .home {
+    font-weight: 200;
+}
+
+.nav .li_home {
+    margin-left: 0;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.user {
+    display: flex;
+}
+
+.user .text p {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.perfil {
+    width: 3rem;
+}
+
+.hello {
+    font-weight: 200;
+    color: #e5e5e5da;
+}
+
+.username {
+    font-weight: 400;
+    color: aliceblue;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18rem;
+    font-weight: 600;
+}
+
+.center h1 {
+    font-size: 46px;
+    color: white;
+}
+
+.center .globe {
+    text-decoration: none;
+    background-color: rgb(107, 81, 254);
+    padding: 1.1rem;
+    border-radius: .5rem;
+    font-size: 16px;
+    margin-top: 1.6rem;
+    display: flex;
+}
+
+.center svg {
+    fill: #E5E5E5;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.card_bottom {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 75rem;
+    height: 5rem;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 13rem;
+}
+
+.card_bottom p {
+    color: #17181C;
+}
+
+.card_bottom .location {
+    margin-right: 2rem;
+}
+
+.card_bottom .activity {
+    margin-right: 8rem;
+}
+
+.card_bottom .when {
+    margin-right: 6rem;
+}
+
+.card_bottom svg {
+    fill: rgb(221, 170, 16);
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+}
+
+.popular_destinations,
+.hotels_and_restaurants,
+.travel_tips_and_advice,
+.activities,
+.about_us {
+    background-color: #FFFFFF;
+}
+
+.local,
+.atividades,
+.date,
+.convidados {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.frase_local,
+.frase_activity,
+.frase_date,
+.frase_guest {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.card_bottom .search_icon svg {
+    fill: #F7FBFA;
+}
+
+.search {
+    border-radius: 7px;
+    background-color: rgb(107, 81, 254);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: .5rem;
+    padding-left: -1rem;
+    margin-left: 7rem;
+}
+
+.popular_destinations {
+    min-height: 15rem;
+}
+
+.popular_destinations h1,
+.hotels_and_restaurants h1,
+.travel_tips_and_advice h1,
+.header_activities h1 {
+    color: var(--Black_Background);
+    font-size: 30px;
+    padding-left: 13rem;
+    padding-top: 7.5rem;
+    padding-bottom: 4rem;
+}
+
+.cities {
+    display: flex;
+    justify-content: center;
+}
+
+.cities h2 {
+    color: var(--Black_Background);
+    font-weight: 500;
+}
+
+.cities h3,
+.hospedagem h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #88889c;
+}
+
+.cities div {
+    margin-left: 2rem;
+}
+
+.cities .bigsur,
+.hospedagem .monastero {
+    margin-left: 0;
+}
+
+h2,
+h3 {
+    color: var(--Black_Background);
+}
+
+.header_hospedagem,
+.header_travel,
+.header_activities {
+    display: flex;
+    align-items: center;
+}
+
+.header_hospedagem a,
+.header_travel a,
+.header_activities a,
+.read a {
+    background-color: aliceblue;
+    color: rgb(107, 81, 254);
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: -65px;
+    margin-left: 53.5rem;
+}
+
+.header_travel a {
+    margin-left: 48.4rem;
+}
+
+.header_hospedagem svg,
+.header_travel svg,
+.header_activities svg,
+.read svg {
+    width: 13px;
+    fill: rgb(107, 81, 254);
+}
+
+.card_travel h2 {
+    font-size: 20px;
+}
+
+.card_travel h3 {
+    width: 16rem;
+    color: #6e6e7a;
+    font-weight: 400;
+}
+
+.card_travel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 2.5rem;
+}
+
+.card_one,
+.card_two {
+    display: flex;
+}
+
+.text_one,
+.text_two {
+    width: 17rem;
+    padding-left: 2rem;
+}
+
+.card_travel h2 {
+    padding-bottom: 1rem;
+}
+
+.footer_travel {
+    display: flex;
+    padding-top: 5.5rem;
+}
+
+.footer_travel p {
+    color: #88889c;
+    font-weight: 400;
+    font-size: 15px;
+    padding-right: 1rem;
+}
+
+.footer_travel svg {
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.header_activities h1 {
+    padding-right: 10.2rem;
+}
+
+.card_activities {
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.card_activities img {
+    padding-right: 2rem;
+}
+
+.hiking {
+    padding-right: 0;
+}
+
+.card_activities h4 {
+    color: var(--Black_Background);
+    padding-top: .3rem;
+    font-size: 16.5px;
+}
+
+.about_us {
+    display: flex;
+}
+
+.about_us h1 {
+    color: var(--Black_Background);
+    font-size: 30px;
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+}
+
+.read {
+    padding-left: 20rem;
+}
+
+.read a {
+    margin-left: 0;
+}
+
+.read h4,
+.bloco1 h4 {
+    color: #88889c;
+    font-weight: 400;
+    font-size: 16px;
+    width: 34.75rem;
+    padding-bottom: 2rem;
+}
+
+.about_us img {
+    border-radius: 15px;
+    width: 556px;
+    height: 488px;
+    margin-top: 5.5rem;
+    margin-bottom: 7.5rem;
+}
+
+footer {
+    min-width: 100%;
+    min-height: 20rem;
+    background-color: #F9F9F9;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.bloco1,
+.bloco2,
+.bloco3,
+.bloco4 {
+    padding-right: 5rem;
+}
+
+.bloco1 img {
+    width: 5.473rem;
+}
+
+.bloco1 h4 {
+    width: 22.156rem;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes a {
+    margin-right: 2rem;
+}
+
+.bloco2 h5,
+.bloco3 h5,
+.bloco4 h5,
+.bloco5 h5 {
+    color: var(--Black_Background);
+    list-style: none;
+    font-size: 20px;
+}
+
+.bloco2 a,
+.bloco3 a,
+.bloco4 a {
+    color: #88889c;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bloco2 li,
+.bloco3 li,
+.bloco4 li {
+    margin-top: .6rem;
+}
+
+.bloco5 h5 {
+    width: 24.25rem;
+}
+
+.invite {
+    margin-top: 1rem;
+    padding-top: .7rem;
+    padding-left: .7rem;
+    padding-bottom: .7rem;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-right: 5rem;
+}
+
+.invite a {
+    padding-top: .5rem;
+    margin-top: .2rem;
+}
+
+.email {
+    padding-left: 1rem;
+}
+
+.email h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Black1);
+}
+
+.block_invite {
+    display: flex;
+}
+
+.block_invite img {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+.footer_hospedagem {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_hospedagem h5 {
+    color: var(--Black_Background);
+}
+
+.footer_hospedagem .part_inferior {
+    display: flex;
+}
+
+.part_inferior .pin_map, .part_inferior .rating{
+    margin-top: .15rem;
+}
+
+.part_inferior h3{
+    padding-left: .25rem;
+    padding-right: 6.8rem;
+}
+
+.part_inferior .star{
+    padding-right: 5.5rem;
+}
+
+.hospedagem{
+    display: flex;
+    justify-content: center;
+}
+
+.monastero,
+.tremezzo,
+.udaipur {
+    padding-right: 2rem;
+}
